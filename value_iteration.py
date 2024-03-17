@@ -27,6 +27,9 @@ class ValueIteration:
 
         # Demonstrate Results
         ValueIteration.display_results()
+
+        # Write to file
+        WriteOutput.write_to_file(ValueIteration.utility_list, "output/value_iteration_utilities")
     
     @staticmethod
     def run_value_iteration(grid: List[List[State]]):

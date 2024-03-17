@@ -25,6 +25,8 @@ class PolicyIteration:
 
         PolicyIteration.display_results()
 
+        WriteOutput.write_to_file(PolicyIteration.utility_list, "output/policy_iteration_list")
+
     @staticmethod
     def run_policy_iteration(grid: List[List[State]]):
         current_utility_array: List[List[Utility]] = []
@@ -97,6 +99,3 @@ class PolicyIteration:
 
 if __name__ == "__main__":
     PolicyIteration()
-
-
-
